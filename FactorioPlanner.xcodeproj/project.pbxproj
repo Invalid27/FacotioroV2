@@ -29,9 +29,41 @@
 		655B12832E5589150061B758 /* FactorioPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactorioPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		655B12A62E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "FactorioPlanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				asdfICON_ASSETS.bak,
+				asdfMachine_Tiers.bak,
+				asdfModules.bak,
+				asdfRecipes.backup,
+				asdfViewController.backup,
+			);
+			target = 655B12672E5589140061B758 /* FactorioPlanner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		655B12A72E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "Compile Sources" phase from "FactorioPlanner" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 655B12642E5589140061B758 /* Sources */;
+			membershipExceptions = (
+				asdfICON_ASSETS.bak,
+				asdfMachine_Tiers.bak,
+				asdfModules.bak,
+				asdfRecipes.backup,
+				asdfViewController.backup,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		655B126A2E5589140061B758 /* FactorioPlanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				655B12A62E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "FactorioPlanner" target */,
+				655B12A72E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "Compile Sources" phase from "FactorioPlanner" target */,
+			);
 			path = FactorioPlanner;
 			sourceTree = "<group>";
 		};
@@ -43,6 +75,36 @@
 		655B12862E5589150061B758 /* FactorioPlannerUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FactorioPlannerUITests;
+			sourceTree = "<group>";
+		};
+		655B13232E55B4BF0061B758 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		655B132A2E55B4E70061B758 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		655B13312E55B4F80061B758 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		655B133A2E55B5110061B758 /* Windows */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		655B13452E55B5360061B758 /* Utilities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		655B134E2E55B5600061B758 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +137,12 @@
 		655B125F2E5589140061B758 = {
 			isa = PBXGroup;
 			children = (
+				655B134E2E55B5600061B758 /* Data */,
+				655B13452E55B5360061B758 /* Utilities */,
+				655B133A2E55B5110061B758 /* Windows */,
+				655B13312E55B4F80061B758 /* Models */,
+				655B132A2E55B4E70061B758 /* Views */,
+				655B13232E55B4BF0061B758 /* App */,
 				655B126A2E5589140061B758 /* FactorioPlanner */,
 				655B127C2E5589150061B758 /* FactorioPlannerTests */,
 				655B12862E5589150061B758 /* FactorioPlannerUITests */,
@@ -109,6 +177,12 @@
 			);
 			fileSystemSynchronizedGroups = (
 				655B126A2E5589140061B758 /* FactorioPlanner */,
+				655B13232E55B4BF0061B758 /* App */,
+				655B132A2E55B4E70061B758 /* Views */,
+				655B13312E55B4F80061B758 /* Models */,
+				655B133A2E55B5110061B758 /* Windows */,
+				655B13452E55B5360061B758 /* Utilities */,
+				655B134E2E55B5600061B758 /* Data */,
 			);
 			name = FactorioPlanner;
 			packageProductDependencies = (
@@ -398,7 +472,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,7 +497,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
