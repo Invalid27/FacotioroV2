@@ -18,8 +18,10 @@ class WindowController: NSWindowController {
         
         let viewController = MainViewController()
         window.contentViewController = viewController
-        
-        // Add this line to make sure window is visible
-        window.makeKeyAndOrderFront(nil)
+    }
+    
+    // Add this required initializer
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

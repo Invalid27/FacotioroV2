@@ -6,10 +6,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var windowController: WindowController?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        windowController = WindowController()
+        windowController = WindowController(window: nil)  // Add 'window: nil'
         windowController?.showWindow(nil)
-        
-        // Add this to ensure the window comes to front
         windowController?.window?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
     }
