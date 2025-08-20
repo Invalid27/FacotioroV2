@@ -29,41 +29,9 @@
 		655B12832E5589150061B758 /* FactorioPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactorioPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		655B12A62E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "FactorioPlanner" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				asdfICON_ASSETS.bak,
-				asdfMachine_Tiers.bak,
-				asdfModules.bak,
-				asdfRecipes.backup,
-				asdfViewController.backup,
-			);
-			target = 655B12672E5589140061B758 /* FactorioPlanner */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		655B12A72E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "Compile Sources" phase from "FactorioPlanner" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 655B12642E5589140061B758 /* Sources */;
-			membershipExceptions = (
-				asdfICON_ASSETS.bak,
-				asdfMachine_Tiers.bak,
-				asdfModules.bak,
-				asdfRecipes.backup,
-				asdfViewController.backup,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		655B126A2E5589140061B758 /* FactorioPlanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				655B12A62E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "FactorioPlanner" target */,
-				655B12A72E5595FE0061B758 /* Exceptions for "FactorioPlanner" folder in "Compile Sources" phase from "FactorioPlanner" target */,
-			);
 			path = FactorioPlanner;
 			sourceTree = "<group>";
 		};
