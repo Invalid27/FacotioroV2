@@ -1,6 +1,5 @@
 import Cocoa
 
-// MARK: - Window Controller
 class WindowController: NSWindowController {
     
     override init(window: NSWindow?) {
@@ -14,14 +13,26 @@ class WindowController: NSWindowController {
         window.center()
         window.setFrameAutosaveName("MainWindow")
         
+        // Add these to ensure window is visible
+        window.isReleasedWhenClosed = false
+        window.level = .normal
+        
         super.init(window: window)
         
         let viewController = MainViewController()
         window.contentViewController = viewController
+        
+        // Make sure the window is visible
+        window.makeKeyAndOrderFront(nil)
     }
     
-    // Add this required initializer
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // Override showWindow to ensure it's visible
+    override func showWindow(_ sender: Any?) {
+        super.showWindow(sender)
+        window?.makeKeyAndOrderFront(nil)
     }
 }
