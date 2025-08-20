@@ -1,3 +1,4 @@
+import Foundation
 import Cocoa
 
 // MARK: - Recipes (Space Age 2.0.32)
