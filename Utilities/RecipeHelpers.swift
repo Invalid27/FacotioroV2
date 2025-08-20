@@ -34,6 +34,8 @@ func getSimplifiedCategory(_ recipe: Recipe) -> String {
     }
 }
 
+
+
 func getSelectedMachineTier(for node: Node) -> MachineTier? {
     guard let recipe = RECIPES.first(where: { $0.id == node.recipeID }),
           let tiers = MACHINE_TIERS[recipe.category] else {
@@ -99,4 +101,31 @@ func formatBonus(_ value: Double) -> String {
     } else {
         return "\(Int(percentage))%"
     }
+}
+
+func canUseModule(_ module: Module, forRecipe recipe: Recipe) -> Bool {
+    // Quality modules can be used on anything
+    if module.type == .quality {
+        return true
+    }
+    
+    // Productivity modules have restrictions
+    if module.type == .productivity {
+        // Check if it's an intermediate product
+        if INTERMEDIATE_PRODUCTS.contains(recipe.mainOutput) {
+            return true
+        }
+        
+        // Check specific categories that allow productivity
+        if recipe.category == "smelting" || recipe.category == "chemistry" ||
+           recipe.category == "metallurgy" || recipe.category == "organic" {
+            // But only for intermediate products
+            return INTERMEDIATE_PRODUCTS.contains(recipe.mainOutput)
+        }
+        
+        return false
+    }
+    
+    // Speed and efficiency modules can be used on anything
+    return true
 }
